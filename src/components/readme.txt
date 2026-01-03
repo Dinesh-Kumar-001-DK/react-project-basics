@@ -58,3 +58,27 @@ Initialize → Add → Commit → Link → Push
 First time: Steps 1–6
 
 Daily update: just Add → Commit → Push
+
+
+
+2️⃣ If you want files to stop showing “U” because they are tracked
+
+The “U” = Untracked file (not yet added to Git).
+
+To fix:
+
+git add .
+
+
+Then:
+
+git commit -m "Add all files"
+
+
+✅ Effect:
+
+“U” disappears
+
+Git marks them as tracked
+
+Symbols like “M” (Modified) will appear for future changes
