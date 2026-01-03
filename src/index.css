@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'PT Serif', serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+/* Root container */
+#root {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+/* Card */
+.cardContainer {
+  
+  width: 280px;
+  background: #1c2357;
+  border-radius: 16px;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cardContainer:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
+}
+
+/* ONLINE badge */
+.pro {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: #22c55e;
+  color: #fff;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+/* Profile Image */
+.logo {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #646cff;
+  margin: 15px auto;
+}
+
+/* Name */
+.cardContainer h3 {
+  margin: 8px 0;
+  font-size: 20px;
+}
+
+/* Location */
+.cardContainer h3:nth-of-type(2) {
+  font-size: 16px;
+  color: #c7c7ff;
+}
+
+/* Role */
+.cardContainer p {
+  font-size: 14px;
+  margin: 10px 0 15px;
+  color: #e0e0e0;
+}
+
+/* Buttons */
+.cardContainer div button {
+  margin: 5px;
+  padding: 8px 14px;
+  border-radius: 20px;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cardContainer div button:first-child {
+  background: #646cff;
+  color: #fff;
+}
+
+.cardContainer div button:last-child {
+  background: transparent;
+  border: 1px solid #646cff;
+  color: #fff;
+}
+
+.cardContainer div button:hover {
+  opacity: 0.85;
+  transform: scale(1.05);
+}
+
+/* Skills Section */
+.cardContainer h5 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.cardContainer ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.cardContainer ul li {
+  background: #2d357f;
+  padding: 6px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+}
